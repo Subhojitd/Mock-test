@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+      <!-- logo -->
+      <div id="logo">Logo</div>
+      <!-- hamburger -->
+      <div id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- menu -->
+        <ul id="menu">
+          <li>Home</li>
+          <li>Contact</li>
+          <li>Product</li>
+          <li>About</li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <script>
+      const mainMenu = document.getElementById("menu");
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+
+      hamburgerMenu.addEventListener('click',show);
+
+      function show(){
+        mainMenu.style.display = 'flex';
+      }
+    </script>
+  </body>
+  </html>
+
+</html>
